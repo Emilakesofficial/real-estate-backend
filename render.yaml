@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: real-estate-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn main_project.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        value: your-secret
+      - key: EMAIL_HOST_USER
+        value: your-email
+      - key: EMAIL_HOST_PASSWORD
+        value: your-email-password
+      - key: PAYSTACK_SECRET_KEY
+        value: your-secret
+      - key: PAYSTACK_PUBLIC_KEY
+        value: your-public
+      - key: PAYSTACK_CALLBACK_URL
+        value: your-callback-url

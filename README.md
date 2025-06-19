@@ -59,63 +59,63 @@ A fully-featured Real Estate backend built with Django REST Framework. Supports 
   ![Register](screenshots/register.png)
 
 - **Verify Email**  
-  ![Verify Email](screenshots/verify_email.png)
+  ![Verify Email](screenshots/verifyemail.png)
 
 - **Resend Email**  
-  ![Resend Email](screenshots/resend_email.png)
+  ![Resend Email](screenshots/resendemail.png)
 
 - **Login / Token**  
-  ![Token](screenshots/get_token.png)
+  ![Token](screenshots/gettoken.png)
 
 - **Get Profile**  
-  ![Get Profile](screenshots/get_profile.png)
+  ![Get Profile](screenshots/getprofile.png)
 
 - **Update Profile**  
-  ![Update Profile](screenshots/update_profile.png)
+  ![Update Profile](screenshots/updateprofile.png)
 
 - **Change Password Flow**  
-  ![Verify Old Password](screenshots/verify_old_password.png)  
-  ![OTP](screenshots/verify_password_otp.png)  
-  ![Change Password](screenshots/change_password.png)
+  ![Verify Old Password](screenshots/verifyoldpassword.png)  
+  ![OTP](screenshots/verifypasswordotp.png)  
+  ![Change Password](screenshots/changepassword.png)
 
 ### Listings
 
 - **Create Listing**  
-  ![Create Property](screenshots/create_property.png)
+  ![Create Property](screenshots/createproperty.png)
 
 - **All Listings**  
-  ![All Properties](screenshots/get_properties.png)
+  ![All Properties](screenshots/getproperties.png)
 
 - **Single Listing**  
   ![Single Property](screenshots/get_single_property.png)
 
 - **Update / Delete / My Listings**  
-  ![Update](screenshots/update_property.png)  
-  ![Delete](screenshots/delete_property.png)  
-  ![My Properties](screenshots/get_my_properties.png)
+  ![Update](screenshots/updateproperty.png)  
+  ![Delete](screenshots/deleteproperty.png)  
+  ![My Properties](screenshots/getmyproperties.png)
 
 ### Inquiries
 
 - **Make Inquiry**  
-  ![Make Inquiry](screenshots/user_make_enquiry.png)
+  ![Make Inquiry](screenshots/usermakeenquiry.png)
 
 - **View Inquiries (Renter/Buyer)**  
-  ![Renter View](screenshots/view_enquiry_renter.png)
+  ![Renter View](screenshots/viewenquiryrenter.png)
 
 - **View & Reply (Agent)**  
-  ![Agent View](screenshots/view_enquiry_agent.png)  
-  ![Reply](screenshots/reply_enquiry_agent.png)
+  ![Agent View](screenshots/viewenquiryagent.png)  
+  ![Reply](screenshots/replyenquiryagent.png)
 
 ### Checkout & Payment
 
 - **Cart**  
-  ![Add to Cart](screenshots/add_to_cart.png)  
-  ![Remove from Cart](screenshots/remove_from_cart.png)  
-  ![Get Cart](screenshots/get_cart.png)
+  ![Add to Cart](screenshots/addtocart.png)  
+  ![Remove from Cart](screenshots/removefromcart.png)  
+  ![Get Cart](screenshots/getcart.png)
 
 - **Payment**  
-  ![Initialize](screenshots/initialize_payment.png)  
-  ![Verify](screenshots/verify_payment.png)
+  ![Initialize](screenshots/initializepayment.png)  
+  ![Verify](screenshots/verifypayment.png)
 
 
 ## Setup Instructions
