@@ -6,40 +6,40 @@ A fully-featured Real Estate backend built with Django REST Framework. Supports 
 
 ## Features
 
--  JWT Authentication with Email Verification
--  Agent & Renter/Buyer Roles
--  Agents can Create, View, Update & Delete Listings
--  Renters/Buyers can Browse Listings
--  Messaging System for Inquiries and Responses
--  Integrated Paystack Payments for Renting/Buying
--  Profile Management with Image Upload
--  Country & Role Selection during Registration
--  Modular Architecture using Django Apps:
-  - `users` – registration, login, profile, etc.
-  - `listings` – property management
-  - `checkout` – cart system
-  - `payment` – Paystack integration
+-  **JWT Authentication** with email verification
+-  **Agent & Renter/Buyer Roles**
+-  **Agents can list, view, update and delete their properties**
+-  **Renters/Buyers can browse listings**
+-  **Messaging system** for inquiries and responses between renters and agents
+-  **Integrated Paystack payments** for renting/buying properties
+-  **Profile management** with image upload
+-  Country & role selection on registration
+-  API organized across 4 Django apps:
+- `users`: registration, login, profile, etc.
+- `listings`: property management
+- `checkout`: cart & purchase logic
+- `payment`: Paystack integration
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Backend**: Django + Django REST Framework
-- **Auth**: JWT (Simple JWT)
-- **Payments**: Paystack API
-- **Docs**: Swagger (drf-yasg)
-- **DB**: SQLite (easily swappable to Postgres/MySQL)
+- **Authentication**: JWT (djangorestframework-simplejwt)
+- **Payment**: Paystack API
+- **API Documentation**: Swagger (drf-yasg)
+- **Database**: SQLite (default, changeable to Postgres/MySQL)
 
 ---
 
-## 📘 API Documentation
+## API Documentation
 
-- [Swagger UI](http://localhost:8000/swagger/)
-- [ReDoc](http://localhost:8000/redoc/)
+Swagger UI: [http://localhost:8000/swagger/](http://localhost:8000/swagger/)  
+ReDoc: [http://localhost:8000/redoc/](http://localhost:8000/redoc/)
 
 ---
 
-## Sample Endpoints
+## Sample API Endpoints
 
 | Feature       | Endpoint                        | Method |
 |---------------|----------------------------------|--------|
@@ -50,99 +50,125 @@ A fully-featured Real Estate backend built with Django REST Framework. Supports 
 | Make Inquiry  | `/api/listings/enquire/`         | POST   |
 | Payment       | `/api/payment/initialize/`       | POST   |
 
-
 ## Screenshots
+## ENDPOINTS
 
-### Auth & User
+## register
+![alt text](register.png)
 
-- **Register**  
-  ![Register](screenshots/register.png)
+## verify email
+![alt text](<verify email.png>)
 
-- **Verify Email**  
-  ![Verify Email](screenshots/verifyemail.png)
+## resend email
+![alt text](<resend email.png>)
 
-- **Resend Email**  
-  ![Resend Email](screenshots/resendemail.png)
+## token
+![alt text](<get token.png>)
 
-- **Login / Token**  
-  ![Token](screenshots/gettoken.png)
+## login
+![alt text](login.png)
 
-- **Get Profile**  
-  ![Get Profile](screenshots/getprofile.png)
+## get profile
+![alt text](<get profile.png>)
 
-- **Update Profile**  
-  ![Update Profile](screenshots/updateprofile.png)
+## update profile
+![alt text](<update profile.png>)
 
-- **Change Password Flow**  
-  ![Verify Old Password](screenshots/verifyoldpassword.png)  
-  ![OTP](screenshots/verifypasswordotp.png)  
-  ![Change Password](screenshots/changepassword.png)
+## verify old password
+![alt text](<verify old password.png>)
+
+## verify old password otp
+![alt text](<verify password otp.png>)
+
+## change password
+![alt text](<change password.png>)
+
+### forget password 
+![alt text](image.png)
+
+### verify-forget-password-otp
+![alt text](verify-forget-password-otp.png)
+
+### reset password
+![alt text](<reset password.png>)
 
 ### Listings
 
-- **Create Listing**  
-  ![Create Property](screenshots/createproperty.png)
+### Create listing
+![alt text](<create property.png>)
 
-- **All Listings**  
-  ![All Properties](screenshots/getproperties.png)
+### View all listings
+![alt text](<get properties.png>)
 
-- **Single Listing**  
-  ![Single Property](screenshots/get_single_property.png)
+### View single listing
+![alt text](<get single property.png>)
 
-- **Update / Delete / My Listings**  
-  ![Update](screenshots/updateproperty.png)  
-  ![Delete](screenshots/deleteproperty.png)  
-  ![My Properties](screenshots/getmyproperties.png)
+### update property(only agent who listed the property can update)
+![alt text](<update property.png>)
+
+### delete property
+![alt text](<delete property.png>)
+
+### get my properties(agent)
+![alt text](<get my properties(agent).png>)
 
 ### Inquiries
 
-- **Make Inquiry**  
-  ![Make Inquiry](screenshots/usermakeenquiry.png)
+### make enquiry
+![alt text](<user make enquiry.png>)
 
-- **View Inquiries (Renter/Buyer)**  
-  ![Renter View](screenshots/viewenquiryrenter.png)
+### view replied and all enquiries(renter/buyer)
+![alt text](<view enquiry(renterbuyer).png>)
 
-- **View & Reply (Agent)**  
-  ![Agent View](screenshots/viewenquiryagent.png)  
-  ![Reply](screenshots/replyenquiryagent.png)
+### view all enquiries(agent)
+![alt text](<view enquiry(agent).png>)
+
+### reply enquiries(agent)
+![alt text](<reply enquiry (agent).png>)
 
 ### Checkout & Payment
 
-- **Cart**  
-  ![Add to Cart](screenshots/addtocart.png)  
-  ![Remove from Cart](screenshots/removefromcart.png)  
-  ![Get Cart](screenshots/getcart.png)
+### add to cart
+![alt text](<add to cart.png>)
 
-- **Payment**  
-  ![Initialize](screenshots/initializepayment.png)  
-  ![Verify](screenshots/verifypayment.png)
+### remove from cart
+![alt text](<remove from cart.png>)
 
+### get cart
+![alt text](<get cart.png>)
+
+- **Payment**
+
+### initialize payment
+![alt text](<initialize payment.png>)
+
+### verify payment
+![alt text](<verify payment.png>)
+
+> Full documentation with request/response formats is available on Swagger UI.
+
+---
 
 ## Setup Instructions
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/Emilakesofficial/real-estate-backend.git
-cd real-estate-backend
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/Emilakesofficial/real-estate-backend.git
+   cd real-estate-backend
 
-# 2. Create & activate virtual environment
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
+2. **Create and activate a virtual environment**
+    python -m venv venv
+    source venv/bin/activate  # on Windows: venv\Scripts\activate
 
-# 3. Install dependencies
-pip install -r requirements.txt
+3. **Install dependencies**
+    pip install -r requirements.txt
 
-# 4. Apply migrations
-python manage.py migrate
+4.**Run migrations**
+    python manage.py migrate
 
-# 5. Run server
-python manage.py runserver
+5. **Start the server**
+    python manage.py runserver
 
 
-**Contact**
-For inquiries or collaboration:
-📧 adegbemiadekunle56@gmail.com
-🔗 LinkedIn : https://www.linkedin.com/in/adekunle-adegbemi-4b590a346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+
+
